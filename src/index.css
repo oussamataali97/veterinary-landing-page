@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Tajawal', sans-serif;
+}
+.img::after{
+  content:'';
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(250 204 21 );
+  opacity: 1;
+  z-index: -100;
+}
+
+.images{
+  background: url('./assets/sdqsd.png');
+  width: 100%;
+  height: 100%;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position:top top;
+ position: relative;
+ z-index: 100;
+
+}
+
+.images::after{
+  content: '';
+  background-color: rgb(250 204 21 );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.8;
+}
+
