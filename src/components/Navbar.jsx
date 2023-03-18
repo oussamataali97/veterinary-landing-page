@@ -17,13 +17,13 @@ const Navbar = () => {
                 <input type="text" placeholder='Search...' className=' py-2 w-72 focus:outline-0 px-5 bg-yellow-400 placeholder:text-white' />
                 <button className='bg-cyan-500 text-white px-5 h-full absolute top-0 right-0'><AiOutlineSearch/></button>
             </div>
-            <button className="block md:hidden text-[30px] text-white" onClick={()=>setToggle(!toggle)} >
-                {toggle ? <AiOutlineClose/> : <AiOutlineMenu/>}
+            <button className="block md:hidden text-[30px] z-[20]  text-white" onClick={()=>setToggle(!toggle)} >
+                {toggle ? <AiOutlineClose className=' text-neutral-700 '/> : <AiOutlineMenu/>}
             </button>
 
 
         </div>
-            <ul className={toggle ? 'shadow-md py-6 space-y-4 bg-gray-100 text-neutral-600  px-5   text-lg font-semibold absolute top-[70px] duration-500 ease-in w-full'  : ' w-full duration-500 ease-in-out  bg-gray-100 text-neutral-600  px-5  text-lg font-semibold absolute -top-[900px]'}>
+            <ul className={toggle ? 'shadow-md py-6 space-y-4 z-[10] bg-gray-100 text-neutral-600  px-5   text-lg font-semibold absolute top-[0px] duration-500 ease-in w-full'  : ' w-full duration-500 ease-in-out  bg-gray-100 text-neutral-600  px-5  text-lg font-semibold absolute -top-[200px]'}>
                  <li className='hover:cursor-pointer hover:underline hover:text-yellow-900 duration-300 ease-linear'>Home</li>
                  <li className='hover:cursor-pointer hover:underline hover:text-yellow-900 duration-300 ease-linear'>About</li>
                  <li className='hover:cursor-pointer hover:underline hover:text-yellow-900 duration-300 ease-linear'>Services</li>
